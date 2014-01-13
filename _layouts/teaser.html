@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en" itemscope itemtype="http://schema.org/Blog">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>{{ page.title }}</title>
+
+  <meta name="description" content="{{ page.description }}" />
+
+  <!-- Schema.org -->
+  <meta itemprop="name" content="{{ page.title }}" />
+  <meta itemprop="description" content="{{ page.description }}" />
+
+  <!-- Open Graph tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tech Insiders" />
+  <meta property="og:url" content="http://techinsiders.io" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:url" content="http://techinsiders.io" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+
+  <!-- Page claiming -->
+  <meta property="fb:admins" content="720296700" />
+  <meta name="google-site-verification" content="UuiEAl6XeUFYgwE8BRFX7_TbibGCGdNJTuCl-AwDvRo" />
+  <style type="text/css" media="all">
+  body {
+    font-family: Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+    background-color: #DDD;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  #content {
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    max-width: 720px;
+    padding: 2em 4em;
+    text-align: left;
+  }
+  h1 {
+    font-size:3em;
+    line-height: 100%;
+  }
+  h1 span {
+    color: #888;
+  }
+  h2 {
+    font-size: 1.5em;
+    display: block;
+    margin: 0em;
+    line-height: 100%;
+  }
+  footer {
+    margin-top : 4em;
+    border-top: 1px solid #ccc;
+    text-align: center;
+  }
+  a {
+    color: #6694e3;
+  }
+  </style>
+</head>
+<body>
+<div id="content">
+  <h1>Tech Insiders <span>coming soon...</span></h1>
+  {{ content }}
+  <footer>
+    <p>A project by <a
+      href="http://twitter.com/ernesto_jimenez">@ernesto_jimenez</a> and <a
+    href="http://twitter.com/phobeo">@phobeo</a></p>
+  </footer>
+</div>
+</body>
+</html>

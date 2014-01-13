@@ -46,9 +46,11 @@
   h1 {
     font-size:3em;
     line-height: 100%;
+    font-family: Consolas, Roboto, monospace;
   }
   h1 span {
     color: #888;
+    white-space: nowrap;
   }
   h2 {
     font-size: 1.5em;
@@ -64,11 +66,24 @@
   a {
     color: #6694e3;
   }
+  @media screen and (max-width: 480px) {
+    div#content {
+      margin: 5px;
+      padding: 2em 2em;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    h1 span {
+      font-size: 0.6em;
+    }
+  }
   </style>
+  <meta name="viewport" content="width=device-width" />
 </head>
 <body>
 <div id="content">
-  <h1>Tech Insiders <span>coming soon...</span></h1>
+  <h1>Tech Insiders <span>// coming soon...</span></h1>
   {{ content }}
   <footer>
     <p>A project by <a

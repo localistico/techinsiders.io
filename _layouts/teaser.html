@@ -3,31 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>{{ page.title }}</title>
-
-  <meta name="description" content="{{ page.description }}" />
-
-  <!-- Schema.org -->
-  <meta itemprop="name" content="{{ page.title }}" />
-  <meta itemprop="description" content="{{ page.description }}" />
-
-  <!-- Open Graph tags -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Tech Insiders" />
-  <meta property="og:url" content="http://techinsiders.io/" />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="{{ page.description }}" />
-  <meta property="og:image" content="{{ site.url }}/assets/og_preview200.png" />
-
-  <!-- Twitter cards -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:url" content="http://techinsiders.io/" />
-  <meta name="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:description" content="{{ page.description }}" />
-
-  <!-- Page claiming -->
-  <meta property="fb:admins" content="720296700" />
-  <meta name="google-site-verification" content="UuiEAl6XeUFYgwE8BRFX7_TbibGCGdNJTuCl-AwDvRo" />
-  <meta property="twitter:account_id" content="1486067566" />
+  {% include meta_tags.html %}
   <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
   <style type="text/css">
   #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
@@ -75,6 +51,9 @@
   a {
     color: #6694e3;
   }
+  pre {
+    line-height: 1.1em;
+  }
   @media screen and (max-width: 480px) {
     div#content {
       margin: 5px;
@@ -92,7 +71,8 @@
 </head>
 <body>
 <div id="content">
-  <h1>Tech Insiders <span>// coming soon...</span></h1>
+  {% include techinsiders_asciiart.html %}
+
   {{ content }}
   <footer>
     <p>A project by <a
@@ -100,14 +80,6 @@
     href="http://twitter.com/phobeo">@phobeo</a></p>
   </footer>
 </div>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-47096042-1', 'techinsiders.io');
-ga('send', 'pageview');
-</script>
+{% include google_analytics.html %}
 </body>
 </html>

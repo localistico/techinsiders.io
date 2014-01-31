@@ -1,16 +1,28 @@
 ---
 layout: default
 ---
-<div id="title">
-  <h2>{{ page.name }}</h2>
-  <h3>{{ page.position }} <span class="italics">at</span> {{ page.company }}</h3>
-  <p class="meta">Published on {{ page.date | date_to_string }}</p>
-</div>
 <article>
-  <img src="{{ page.photo }}" alt="Photo of {{ page.name }}" />
-  <caption>{{ page.caption }}</caption>
-  <div class="post">
-    {{ content }}
-  </div>
+  <header>
+    <h1>{{ page.name }}</h1>
+    <h2>
+      <em>{{ page.position }}</em> at <em>{{ page.company }}</em>
+    </h2>
+    <p class="meta">
+      Published on
+      <time datetime="{{ page.date }}">
+        {{ page.date | date_to_long_string }}
+      </time>
+    </p>
+  </header>
+  {% if page.photo %}
+  <figure>
+    <img src="{{ page.photo }}" alt="Photo of {{ page.name }}" />
+    {% if page.caption %}
+    <figcaption>{{ page.caption | markdownify }}</figcaption>
+    {% endif %}
+  </figure>
+  {% endif %}
+  {{ content }}
 </article>
+
 {% include subscribe_cta.html %}

@@ -5,25 +5,110 @@
 }
 
 body {
-  font-family: Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  font-weight: 300;
+  font-family: 'Georgia',  serif;
   color: #333;
   text-align: center;
   font-size: 14px;
   line-height: 150%;
+  margin: 0;
 }
 
 .site {
   background-color: #FFF;
-  margin: 20px auto;
-  max-width: 720px;
-  padding: 2em 4em;
   text-align: left;
+  width: 70%;
+  margin: auto;
 }
-.title {
-  display: none;
+
+.header {
+  padding: 1em 0;
+  margin: auto;
+  overflow: hidden;
+  border-bottom: 3px solid #333;
+  font-family: "futura-pt", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
 }
+
+.header h1 {
+  margin: 0;
+  font-weight: 700;
+  display: inline-block;
+  float: left;
+  width: 30%;
+  font-family: "futura-pt", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+}
+
+.header ul {
+  float: right;
+  margin: 0;
+}
+
+.header ul li {
+  display: inline-block;
+  line-height: 42px;
+  padding-left: 15px;
+}
+
+.header ul li a {
+  text-transform: uppercase;
+}
+
+.header h1.title a, .header ul li a {
+  text-decoration: none;
+}
+
+div#title { 
+  text-align: center;
+  padding: 4em 0;
+}
+
+div#title h2 {
+  font-weight: 300;
+  font-size: 7em;
+  margin:0 0 20px 0;
+  line-height: 0.75em;
+  letter-spacing: 0.05em;
+}
+
+div#title h3 {
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 1.25em;
+  margin: 0;
+}
+
+span.italics {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.75em;
+  line-height: 52px;
+  color: #666;
+}
+
+div#title h4 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+div#introduction {
+  font-style: italic;
+  padding: 20px 0;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+div#introduction p {
+  margin: 10px 0;
+}
+
 .header pre {
   line-height: 1.2em;
+}
+h1, h2, h3, h4 {
+  font-family: "futura-pt", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  font-weight: 700;
 }
 h1 {
   font-size:3em;
@@ -34,10 +119,11 @@ h1 span {
   color: #888;
   white-space: nowrap;
 }
-h2 {
-  font-size: 1.5em;
+h3 {
+  font-size: 1.75em;
   display: block;
-  line-height: 100%;
+  line-height: 1.5em;
+  margin: 40px 0 0 0;
 }
 footer {
   margin-top : 4em;
@@ -47,11 +133,35 @@ footer {
 a {
   color: #6694e3;
 }
+
+p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+article {
+  width: 80%;
+  margin: auto;
+}
+
+article h3 {
+  font-family: 'Georgia',  serif;
+  font-style: italic;
+}
+
 article img {
-  max-width: 100%;
+  width: 100%;
 }
 p.meta {
+  display: inline-block;
+  font-size: 1.25em;
   color: #ccc;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  text-align: center;
+  font-family: "futura-pt", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  margin-bottom: 0;
 }
 .subscribe_cta {
   border: 2px solid #ccc;

@@ -13,17 +13,19 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
         <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>    
+        <script type="text/javascript" src="//use.typekit.net/vge1sxp.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
     <body>
 
         <div class="site">
           <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            {% include techinsiders_asciiart.html %}
-            <p>
-            <a class="extra" href="/">home</a>
-            <a class="extra" href="/archives.html">archives</a>
-            </p>
+            <h1><a href="/">[TechInsiders]</a></h1>
+            <ul id="nav">
+              <li><a class="extra" href="/">home</a></li>
+              <li><a class="extra" href="/archives.html">archives</a></li>
+            </ul>
           </div>
 
           {{ content }}

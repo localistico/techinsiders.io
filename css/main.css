@@ -223,10 +223,7 @@ h1 {
   font-size:3em;
   line-height: 100%;
 }
-h1 span {
-  color: #888;
-  white-space: nowrap;
-}
+
 h3 {
   font-size: 1.75em;
   display: block;
@@ -313,12 +310,11 @@ article img {
 }
 
 p.meta {
-  font-weight: 100;
   font-size: 1.25em;
   font-style: italic;
   color: #b9b9b9;
   font-weight: 100;
-  margin-bottom: 0;
+  margin: 20px 0 0 0;
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
 }
 
@@ -340,10 +336,6 @@ p.meta:after {
 .subscribe_cta h1 {
   font-weight: 600;
   margin: 0 0 20px 0;
-}
-
-.subscribe_cta h1, h2 {
-  text-align: center;
 }
 
 .subscribe_cta h2 {
@@ -387,7 +379,53 @@ p.meta:after {
     width: 100%;
     min-width: 0px;
     margin: 0px;
-    padding: 2em;
+    padding: 0 2em 2em 2em;
+  }
+  header {
+    text-align: center;
+    padding: 4em 0;
+  }
+  header h1 {
+    font-size: 4.5em;
+    line-height: 1.15em;
+    margin:0 0 15px 0;
+  }
+
+  header h2 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+
+  header h2 em {
+    font-size: 1.33em;
+    line-height: 1.25em;
+  }
+
+  header h3.present {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin: 40px 0 0 0;
+  }
+  p {
+    font-size: 1.35em;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  div#introduction {
+    margin-bottom: 4em;
+  }
+  .subscribe_cta, footer {
+    padding: 4em 2em;
+  }
+  footer p {
+    margin: 0;
+    text-align: left;
   }
 }
 @media screen and (max-width: 550px) {

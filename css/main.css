@@ -73,7 +73,7 @@ body {
   margin: 0;
 }
 
-div.site, div.header, article {
+div.site, div.header, article, .subscribe_cta {
   min-width: 800px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -155,8 +155,8 @@ div.header img {
   text-transform: uppercase;
   font-weight: 400;
   text-align: right;
-  padding: 5px 10px;
-  line-height: 15px;
+  padding: 0.3em 0.6em;
+  /*line-height: 15px;*/
   letter-spacing: 0.015em;
 }
 
@@ -455,6 +455,8 @@ p.meta:after {
   }
 
   .header ul li {
+    line-height: 1em;
+    height: 1em;
     width: 50%;
   }
 

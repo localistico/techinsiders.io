@@ -9,14 +9,17 @@
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
 }
 
-#mc_embed_signup form label {
+#mc_embed_signup .mc-field-group label {
   text-transform: uppercase;
   letter-spacing: 0.015em;
+  word-spacing: 0.1em;
+  margin-bottom: 5px;
 }
 
 #mc_embed_signup .mc-field-group {
   width: 100%;
   margin: 0;
+  padding-bottom: 20px;
 }
 
 #mc_embed_signup .mc-field-group input {
@@ -231,7 +234,7 @@ h1 {
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   display: block;
   line-height: 1.5em;
   margin: 40px 0 0 0;
@@ -306,7 +309,7 @@ article figure figcaption p {
   font-size: 0.9em;
   background: rgba(0,0,0,0.6);
   color: rgba(255,255,255,0.8);
-  padding: 0.25em;
+  padding: 0.25em 0.35em;
   text-align: right;
   display: inline-block;
 }
@@ -369,9 +372,7 @@ p.meta:after {
     padding: 1.5em;
     /*margin: 2em;*/
   }
-  .subscribe_cta {
-    padding: 4em 1em;
-  }
+  
   h1 {
     font-size: 2.5em;
   }
@@ -382,10 +383,9 @@ p.meta:after {
     width: 100%;
     min-width: 0px;
     margin: 0px;
-    padding: 0 2em 2em 2em;
+    padding: 0 2em 0 2em;
   }
   header {
-    text-align: center;
     padding: 4em 0;
   }
   header h1 {
@@ -410,8 +410,8 @@ p.meta:after {
   }
 
   h3 {
-    font-size: 1.5em;
-    line-height: 1.25em;
+    font-size: 1.35em;
+    line-height: 1.5em;
     margin: 40px 0 0 0;
   }
   p {
@@ -426,6 +426,12 @@ p.meta:after {
   .subscribe_cta, footer {
     padding: 4em 2em;
   }
+  
+  .subscribe_cta h2 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+  
   footer p {
     margin: 0;
     text-align: left;
@@ -462,5 +468,57 @@ p.meta:after {
 
   .header ul li:first-child {
     text-align: right;
+  }
+  
+  article {
+    padding: 0 1em 0 1em;
+  }
+  
+  header {
+    padding: 3em 0;
+  }
+  header h1 {
+    font-size: 3em;
+    line-height: 1.15em;
+    margin:0 0 15px 0;
+  }
+
+  header h2 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
+  header h2 em {
+    font-size: 1.33em;
+    line-height: 1.25em;
+  }
+
+  header h3.present {
+    font-size: 1.1em;
+  }
+  
+  p.meta {
+    font-size: 1.1em;
+  }
+  
+  div#introduction {
+    margin-bottom: 3em;
+  }
+  .subscribe_cta, footer {
+    padding: 4em 1em;
+  }
+  
+  .subscribe_cta h1 {
+    font-size: 2.25em;
+    margin-bottom: 15px;
+  }
+
+  .subscribe_cta h2 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
+  .subscribe_cta p {
+    font-size: 1.35em;
   }
 }

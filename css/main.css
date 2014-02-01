@@ -202,7 +202,7 @@ header h3.present {
   font-size: 1.5em;
   font-weight: 100;
   font-style: italic;
-  color: #b9b9b9;
+  color: #b4b4b4;
   border-top: 1px dotted #ccc;
   border-bottom: 1px dotted #ccc;
   text-align: center;
@@ -288,7 +288,7 @@ article {
 
 article h3 {
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 article figure {
@@ -321,7 +321,7 @@ article img {
 p.meta {
   font-size: 1.25em;
   font-style: italic;
-  color: #b9b9b9;
+  color: #b4b4b4;
   font-weight: 100;
   margin: 20px 0 0 0;
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
@@ -372,7 +372,7 @@ p.meta:after {
     padding: 1.5em;
     /*margin: 2em;*/
   }
-  
+
   h1 {
     font-size: 2.5em;
   }
@@ -426,12 +426,12 @@ p.meta:after {
   .subscribe_cta, footer {
     padding: 4em 2em;
   }
-  
+
   .subscribe_cta h2 {
     font-size: 2em;
     line-height: 1.25em;
   }
-  
+
   footer p {
     margin: 0;
     text-align: left;
@@ -469,11 +469,11 @@ p.meta:after {
   .header ul li:first-child {
     text-align: right;
   }
-  
+
   article {
     padding: 0 1em 0 1em;
   }
-  
+
   header {
     padding: 3em 0;
   }
@@ -496,18 +496,18 @@ p.meta:after {
   header h3.present {
     font-size: 1.1em;
   }
-  
+
   p.meta {
     font-size: 1.1em;
   }
-  
+
   div#introduction {
     margin-bottom: 3em;
   }
   .subscribe_cta, footer {
     padding: 4em 1em;
   }
-  
+
   .subscribe_cta h1 {
     font-size: 2.25em;
     margin-bottom: 15px;

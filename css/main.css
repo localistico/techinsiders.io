@@ -1,5 +1,5 @@
 #mc_embed_signup {
-  background:#333; 
+  background:#333;
   clear:left;
 }
 
@@ -25,8 +25,8 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  line-height: 2em;
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  line-height: 2em;
   font-size: 1.25em;
   color: #fff;
   font-weight: 300;
@@ -38,10 +38,14 @@
   -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;	
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  line-height: 2em;
+  font-size: 1.35em;
   text-transform: uppercase;
   font-weight: 300;
+  padding: 8px 22px;
   outline: none;
+  height: auto;
 }
 
 #mc_embed_signup form input[type="submit"]:hover, #mc_embed_signup form input[type="submit"]:active {
@@ -123,7 +127,7 @@ div.header img {
 }
 
 .header ul li a#suscribe {
-  width: 100%;  
+  width: 100%;
   background: #A4C740;
   color: rgba(255,255,255,1);
   -webkit-border-radius: 5px;
@@ -356,22 +360,22 @@ p.meta:after {
 }
 
 @media screen and (max-width: 800px) {
-  div.site {
+  div.site, div.header, article, .subscribe_cta {
     min-width: 0px;
     width: 100%;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+  div.site {
     /*margin: 2em;*/
   }
   div.header{
-    min-width: 0px;
-    width: 100%;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
     padding: 1em;
     /*margin: 2em;*/
+  }
+  .subscribe_cta {
+    padding: 4em 1em;
   }
   h1 {
     font-size: 2.5em;
@@ -383,6 +387,11 @@ p.meta:after {
     width: 100%;
     min-width: 0px;
     margin: 0px;
-    padding: 1em;
+    padding: 2em;
+  }
+}
+@media screen and (max-width: 500px) {
+  #mc_embed_signup form input[type="submit"] {
+    width: 100%;
   }
 }

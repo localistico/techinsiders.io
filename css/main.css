@@ -120,7 +120,7 @@ div.header img {
   display: inline-block;
   line-height: 65px;
   vertical-align: baseline;
-  padding-left: 10px;
+  padding: 0px 5px;
   display: table-cell;
   vertical-align: middle;
   height: 65px;
@@ -371,7 +371,7 @@ p.meta:after {
     /*margin: 2em;*/
   }
   div.header{
-    padding: 1em;
+    padding: 1.5em;
     /*margin: 2em;*/
   }
   .subscribe_cta {
@@ -390,8 +390,34 @@ p.meta:after {
     padding: 2em;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   #mc_embed_signup form input[type="submit"] {
     width: 100%;
+  }
+
+  div.header a#home {
+    float: none;
+    display: table-caption;
+    text-align: center;
+    padding-top: 1.5em;
+  }
+
+  .header nav {
+    display: table-row-group;
+  }
+
+  .header ul {
+    float: none;
+    width: 100%;
+    padding: 0px;
+    display: table-row;
+  }
+
+  .header ul li {
+    width: 50%;
+  }
+
+  .header ul li:first-child {
+    text-align: right;
   }
 }

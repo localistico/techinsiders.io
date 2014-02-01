@@ -70,32 +70,27 @@ body {
   font-weight: 300;
   font-family: 'Georgia',  serif;
   color: #333;
-  text-align: center;
+  text-align: left;
   font-size: 14px;
   line-height: 150%;
   margin: 0;
 }
 
-div.site, div.header, article, .subscribe_cta {
+div.header, article, section, footer {
+  padding: 1em;
+  width: 55%;
   min-width: 800px;
+  margin: auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.site {
-  text-align: left;
-  margin: auto;
-}
-
 .header {
-  padding: 1.5em;
   padding-bottom: 0.5em;
-  margin: auto;
   overflow: hidden;
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
   display: table;
-  width: 55%;
 }
 
 div.header a {
@@ -225,9 +220,11 @@ div#introduction p {
 .header pre {
   line-height: 1.2em;
 }
+
 h1, h2, h3, h4 {
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
 }
+
 h1 {
   font-size:3em;
   line-height: 100%;
@@ -259,10 +256,14 @@ p {
   margin-bottom: 30px;
 }
 
-footer {
-  padding: 2em 0;
+div.band {
+  padding: 0;
   background: #333;
   border-top: 1px solid #444;
+}
+
+footer {
+  padding: 2em 0;
   text-align: center;
   color: rgba(255,255,255,0.4);
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
@@ -278,12 +279,6 @@ footer a {
 
 footer a:hover, footer a:active {
   color: #8CBE22;
-}
-
-article {
-  margin: auto;
-  width: 55%;
-  padding: 1.5em;
 }
 
 article h3 {
@@ -337,9 +332,7 @@ p.meta:after {
 
 .subscribe_cta {
   color: rgba(255,255,255,0.8);
-  background: #333;
-  padding: 4em 22.5%;
-  margin-top: 4em;
+  padding: 4em 1em;
 }
 
 .subscribe_cta h1 {
@@ -361,12 +354,9 @@ p.meta:after {
 }
 
 @media screen and (max-width: 800px) {
-  div.site, div.header, article, .subscribe_cta {
+  div.header, article, section, footer {
     min-width: 0px;
     width: 100%;
-  }
-  div.site {
-    /*margin: 2em;*/
   }
   div.header{
     padding: 1.5em;
@@ -423,6 +413,7 @@ p.meta:after {
   div#introduction {
     margin-bottom: 4em;
   }
+
   .subscribe_cta, footer {
     padding: 4em 2em;
   }

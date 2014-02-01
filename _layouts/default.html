@@ -17,25 +17,29 @@
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <a id="home" href="/"><img src="/assets/logox2.png" width="255" height="69" alt="techinsiders.io"/></a>
-            <nav>
-              <ul>
-                <li><a id="subscribe-button" class="extra" href="#subscribe">Subscribe</a></li>
-                <li><a class="extra" href="/archives.html">Archive</a></li>
-              </ul>
-            </nav>
-          </div>
+    <div class="site">
+      <div class="header">
+        <a id="home" href="/"><img src="/assets/logox2.png" width="255" height="69" alt="techinsiders.io"/></a>
+        <nav>
+          <ul>
+            <li><a id="subscribe-button" class="extra" href="#subscribe">Subscribe</a></li>
+            <li><a class="extra" href="/archives.html">Archive</a></li>
+          </ul>
+        </nav>
+      </div>
 
-          {{ content }}
-  <footer>
-    <p>Tech Insiders is a project by <a
-      href="http://twitter.com/ernesto_jimenez">@ernesto_jimenez</a> and <a
-    href="http://twitter.com/phobeo">@phobeo</a>. Designed by   <a
-        href="http://twitter.com/blanca_tp">@blanca_tp</a></p>
-  </footer>
-        </div>
+      {{ content }}
+      <div class="band">
+        <footer>
+          <p>Tech Insiders is a project by
+          <a href="http://twitter.com/ernesto_jimenez">@ernesto_jimenez</a>
+          and
+          <a href="http://twitter.com/phobeo">@phobeo</a>.
+          <br/>
+          Designed by <a href="http://twitter.com/blanca_tp">@blanca_tp</a></p>
+        </footer>
+      </div>
+    </div>
 
 {% include google_analytics.html %}
 <script type="text/javascript" src="//use.typekit.net/vge1sxp.js"></script>
@@ -51,5 +55,5 @@ try{
   })();
 }catch(e){}
 </script>
-</body>
+  </body>
 </html>

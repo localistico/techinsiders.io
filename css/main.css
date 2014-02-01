@@ -132,7 +132,7 @@ div.header img {
   height: 65px;
 }
 
-.header ul li a#suscribe {
+.header ul li a#subscribe-button {
   width: 100%;
   background: #A4C740;
   color: rgba(255,255,255,1);
@@ -141,7 +141,7 @@ div.header img {
 	border-radius: 5px;
 }
 
-.header ul li a#suscribe:hover, .header ul li a#suscribe:active {
+.header ul li a#subscribe-button:hover, .header ul li a#subscribe-button:active {
   background: #8CBE22;
   color: #fff;
   -webkit-transition: all 0.5s ease;

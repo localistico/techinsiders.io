@@ -14,8 +14,6 @@
         <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="//use.typekit.net/vge1sxp.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
     <body>
 
@@ -24,7 +22,7 @@
             <a id="home" href="/"><img src="/assets/logox2.png" width="255" height="69" alt="techinsiders.io"/></a>
             <nav>
               <ul>
-                <li><a id="suscribe" class="extra" href="/">Subscribe</a></li>
+                <li><a id="subscribe-button" class="extra" href="#subscribe">Subscribe</a></li>
                 <li><a class="extra" href="/archives.html">Archive</a></li>
               </ul>
             </nav>
@@ -40,5 +38,18 @@
         </div>
 
 {% include google_analytics.html %}
-    </body>
+<script type="text/javascript" src="//use.typekit.net/vge1sxp.js"></script>
+<script type="text/javascript">
+try{
+  Typekit.load();
+  (function () {
+    var button = document.getElementById("subscribe-button"),
+        input = document.getElementById("mce-NAME");
+    if (button && input) {
+      button.addEventListener('click', function () { input.focus(); });
+    }
+  })();
+}catch(e){}
+</script>
+</body>
 </html>

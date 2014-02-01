@@ -76,7 +76,7 @@ body {
   margin: 0;
 }
 
-div.site, div.header, article, .subscribe_cta {
+div.site, div.header, article, section {
   min-width: 800px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -135,6 +135,16 @@ div.header img {
   height: 65px;
 }
 
+.header ul li a {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: right;
+  padding: 0.3em 0.6em;
+  /*line-height: 15px;*/
+  letter-spacing: 0.015em;
+  text-decoration: underline;
+}
+
 .header ul li a#subscribe-button {
   width: 100%;
   background: #A4C740;
@@ -142,6 +152,7 @@ div.header img {
   -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	text-decoration: none;
 }
 
 .header ul li a#subscribe-button:hover, .header ul li a#subscribe-button:active {
@@ -152,19 +163,6 @@ div.header img {
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-}
-
-.header ul li a {
-  text-transform: uppercase;
-  font-weight: 400;
-  text-align: right;
-  padding: 0.3em 0.6em;
-  /*line-height: 15px;*/
-  letter-spacing: 0.015em;
-}
-
-.header h1.title a, .header ul li a {
-  text-decoration: none;
 }
 
 header {
@@ -202,7 +200,7 @@ header h3.present {
   font-size: 1.5em;
   font-weight: 100;
   font-style: italic;
-  color: #b9b9b9;
+  color: #b4b4b4;
   border-top: 1px dotted #ccc;
   border-bottom: 1px dotted #ccc;
   text-align: center;
@@ -280,7 +278,7 @@ footer a:hover, footer a:active {
   color: #8CBE22;
 }
 
-article {
+article, section.home {
   margin: auto;
   width: 55%;
   padding: 1.5em;
@@ -288,7 +286,7 @@ article {
 
 article h3 {
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 article figure {
@@ -321,7 +319,7 @@ article img {
 p.meta {
   font-size: 1.25em;
   font-style: italic;
-  color: #b9b9b9;
+  color: #b4b4b4;
   font-weight: 100;
   margin: 20px 0 0 0;
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
@@ -360,8 +358,108 @@ p.meta:after {
   margin-bottom: 0;
 }
 
+section.home header {
+  padding: 6em 0;
+}
+
+section.home header h1 {
+  font-size: 3.5em;
+  line-height: 1.2em;
+  font-weight: 900;
+}
+
+section.home header h1 em {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: normal;  
+  margin-bottom: 1em;
+}
+
+section.home header p {
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  margin-bottom: 0;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  text-align: left;
+  padding: 1em 0;
+}
+
+div.feat-interview {
+  overflow: hidden;
+  padding-bottom: 6em;
+}
+
+div.feat-interview h2 {
+  font-size: 3em;
+  margin-bottom: 70px;
+}
+
+div.interviewee {
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 2em 0;
+}
+
+div.interviewee img {
+  float: left;
+  width: 25%;
+  margin-right: 3%;
+}
+
+div.interviewee h3 {
+  font-size: 2.25em;
+  line-height: 1em;
+  margin: 0 0 20px 0;
+}
+
+div.interviewee h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+div.interviewee h3 a:hover, div.interviewee h3 a:active {
+  color: #8CBE22;
+  -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+div.interviewee p.meta {
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: 100;
+  font-style: italic;
+  color: #b4b4b4;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  margin: 0 0 10px 0;
+}
+
+div.interviewee p.meta:before, div.interviewee p.meta:after {
+  content: none;
+}
+
+div.interviewee p {
+  font-size: 1.35em;
+  line-height: 1.35em;
+  margin: 0 0 10px 0;
+}
+
+div.interviewee a.read-link {
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+}
+
 @media screen and (max-width: 800px) {
-  div.site, div.header, article, .subscribe_cta {
+  div.site, div.header, article, section {
     min-width: 0px;
     width: 100%;
   }

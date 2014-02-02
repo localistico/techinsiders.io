@@ -453,15 +453,14 @@ div.interviewee h3 a:hover, div.interviewee h3 a:active {
 div.interviewee p.meta {
   display: inline-block;
   font-size: 1.25em;
-  font-weight: 100;
-  font-style: italic;
-  color: #b4b4b4;
-  border-top: 1px dotted #ccc;
-  border-bottom: 1px dotted #ccc;
   margin: 0 0 10px 0;
 }
 
-div.interviewee p.meta:before, div.interviewee p.meta:after {
+div.interviewee p.meta:before {
+  content: none;
+}
+
+div.interviewee p.meta:after {
   content: none;
 }
 

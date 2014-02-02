@@ -343,11 +343,12 @@ p.meta:after {
 .subscribe_cta h1 {
   font-weight: 600;
   margin: 0 0 20px 0;
+  font-size: 2.5em;
 }
 
 .subscribe_cta h2 {
   font-weight: 300;
-  font-size: 2.25em;
+  font-size: 2em;
   line-height: 1.25em;
   margin: 0 0 30px 0;
 }
@@ -359,26 +360,48 @@ p.meta:after {
 }
 
 section.home header {
-  padding: 6em 0;
+  padding: 4em 0 6em 0;
 }
 
 section.home header h1 {
-  font-size: 3.5em;
-  line-height: 1.2em;
-  font-weight: 900;
+  font-size: 3em;
+  line-height: 1.25em;
+  font-weight: 600;
+  margin-bottom: 50px;
 }
 
-section.home header h1 em {
-  font-size: 1.4em;
-  text-transform: uppercase;
+section.home header h1 span.strong {
+  font-size: 2.5em;
   font-weight: 900;
   font-style: normal;  
   margin-bottom: 1em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+section.home header h1 span.stronger {
+  font-size: 2.75em;
+  font-weight: 900;
+  font-style: normal;  
+  margin-bottom: 1em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+section.home header h1 span.light {
+  text-transform: uppercase;
+  font-size: 0.85em;
+  border-bottom: 10px solid #333;
+  font-weight: 700; 
+  line-height: 1em;
+  position: relative;
+  top: -22px;
+  margin-left: 10px;
 }
 
 section.home header p {
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 400;
   margin-bottom: 0;
   border-top: 3px solid #ccc;
@@ -393,15 +416,18 @@ div.feat-interview {
 }
 
 div.feat-interview h2 {
-  font-size: 3em;
-  margin-bottom: 70px;
+  font-size: 1.25em;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #666;
 }
 
 div.interviewee {
   overflow: hidden;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  padding: 2em 0;
+  padding: 1.75em 0;
 }
 
 div.interviewee img {

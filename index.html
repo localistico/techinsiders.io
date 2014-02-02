@@ -1,27 +1,38 @@
 ---
 layout: default
-title: Tech Insiders - Learn about the tech industry from the people that work on it
+title: Tech Insiders - Learn about the tech industry from the people who work on it
 description: "Interviews with people working in the tech industry to learn: what their day to day at work is like, what they like about it, and how they got there"
-subscribe_cta: Register now!
-subscribe_cta_subtitle: And you will be happy
+subscribe_cta: Sounds interesting?
+subscribe_cta_subtitle: Subscribe and we'll deliver cool content to your inbox!
 ---
 
 <section class="home">
-  
-<header>
-  <h1>Learn about the tech industry from <br/><span class="stronger">the people</span><br/> <span class="strong">who work</span> <span class="light">in it</span></h1>
-  <p id="welcome-text">From Tech Insiders we want to share different personal experiences from people in the industry: what is their day to day work like, what do they like about it, who did they get there…We want to provide a diverse portrait on working in the tech industry and maybe inspire other people to join in.</p>
-</header>
+  <header>
+    <h1>
+      Learn about the tech industry from <br/>
+      <span class="stronger">the people</span><br/>
+      <span class="strong">who work</span> <span class="light">in it</span>
+    </h1>
+    <p id="welcome-text">From Tech Insiders we want to share different personal
+    experiences from people in the industry: what is their day to day work
+    like, what do they like about it, who did they get there…We want to provide
+    a diverse portrait on working in the tech industry and maybe inspire other
+    people to join in.</p>
+  </header>
 
-<div class="feat-interview">
-  <h2>Featured story</h2>
-  <div class="interviewee">
-    <h3><a href="">Meet Elena Pérez, Software Engineer at Facebook</a></h3>
-    <p class="meta">Published on January 29 2014</p>
-    <img src="/assets/elena-perez-small.jpg" width="" height="" alt=""/>
-    <p>We sat down with Elena Pérez, Software Engineer at Facebook in London. We spoke about what her day to day in the job, the things she likes about it, how she got there, and what her interview process was like. She even offered some advice on how to prepare for the interviews!</p>
-    <a class="read-link" href="">Keep reading</a>
+  <div class="feat-interview">
+    <h2>Featured story</h2>
+    {% for post in site.posts limit: 1 %}
+    <div class="interviewee">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p class="meta">Published on {{ post.date | date_to_long_string }}</p>
+      <img src="/assets/photos/thumb-{{ post.photo }}" width="" height="" alt=""/>
+      <p>{{ post.description }}</p>
+      <a class="read-link" href="{{ post.url }}">Keep reading</a>
+    </div>
+    {% endfor %}
   </div>
-</div>
 </section>
+
 {% include subscribe_cta.html %}
+

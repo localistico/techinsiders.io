@@ -22,7 +22,7 @@ layout: default
   {% endif %}
   {% if page.photo %}
   <figure>
-    <img src="{{ page.photo }}" alt="Photo of {{ page.name }}" />
+    <img src="/assets/photos/{{ page.photo }}" alt="Photo of {{ page.name }}" />
     {% if page.caption %}
     <figcaption>{{ page.caption | markdownify }}</figcaption>
     {% endif %}

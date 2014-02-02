@@ -360,7 +360,7 @@ section.home header h1 {
   font-size: 3em;
   line-height: 1.25em;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 1em;
 }
 
 section.home header h1 span.strong {
@@ -383,12 +383,12 @@ section.home header h1 span.stronger {
 
 section.home header h1 span.light {
   text-transform: uppercase;
+  top: -0.6em;
   font-size: 0.85em;
-  border-bottom: 10px solid #333;
+  border-bottom: 0.3em solid #333;
   font-weight: 700;
   line-height: 1em;
   position: relative;
-  top: -22px;
   margin-left: 10px;
 }
 
@@ -551,6 +551,14 @@ div.interviewee a.read-link {
     margin: 0;
     text-align: left;
   }
+
+  section.home header {
+    padding: 2em 0 4em 0;
+  }
+
+  section.home header h1 {
+    font-size: 5vw;
+  }
 }
 @media screen and (max-width: 550px) {
   #mc_embed_signup form input[type="submit"] {
@@ -592,6 +600,12 @@ div.interviewee a.read-link {
   header {
     padding: 3em 0;
   }
+
+  section.home header h1 {
+    font-size: 1em;
+    font-size: 4.5vw;
+  }
+
   header h1 {
     font-size: 3em;
     line-height: 1.15em;

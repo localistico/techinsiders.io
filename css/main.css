@@ -357,14 +357,15 @@ section.home header {
 }
 
 section.home header h1 {
-  font-size: 3em;
+  font-size: 3.2em;
   line-height: 1.25em;
   font-weight: 600;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 
 section.home header h1 span.strong {
-  font-size: 2.5em;
+  font-size: 2.35em;
   font-weight: 900;
   font-style: normal;
   margin-bottom: 1em;
@@ -373,7 +374,7 @@ section.home header h1 span.strong {
 }
 
 section.home header h1 span.stronger {
-  font-size: 2.75em;
+  font-size: 2.7em;
   font-weight: 900;
   font-style: normal;
   margin-bottom: 1em;
@@ -389,7 +390,7 @@ section.home header h1 span.light {
   font-weight: 700;
   line-height: 1em;
   position: relative;
-  margin-left: 10px;
+  margin-left: 1.5%;
 }
 
 section.home header p {
@@ -557,8 +558,17 @@ div.interviewee a.read-link {
   }
 
   section.home header h1 {
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
+  
+  div.interviewee img {
+    width: 35%;
+  }
+
+  div.interviewee h3 {
+    line-height: 1.25em;
+  }
+  
 }
 @media screen and (max-width: 550px) {
   #mc_embed_signup form input[type="submit"] {
@@ -590,7 +600,7 @@ div.interviewee a.read-link {
   }
 
   .header ul li:first-child {
-    text-align: right;
+    text-align: center;
   }
 
   article {
@@ -603,7 +613,7 @@ div.interviewee a.read-link {
 
   section.home header h1 {
     font-size: 1em;
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
 
   header h1 {
@@ -633,6 +643,15 @@ div.interviewee a.read-link {
   div#introduction {
     margin-bottom: 3em;
   }
+  
+  section.home header p {
+    font-size: 1.25em;
+  }
+  
+  div.interviewee p.meta {
+    margin: 0 0 20px 0;
+  }
+  
   .subscribe_cta, footer {
     padding: 4em 1em;
   }

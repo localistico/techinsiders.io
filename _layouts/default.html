@@ -52,6 +52,31 @@ try{
     if (button && input) {
       button.addEventListener('click', function () { input.focus(); });
     }
+
+    var hitCallbackHandler = function (url) {
+      window.location.href = url;
+    };
+
+    document.addEventListener('click', function (event) {
+      try {
+        var target = event.target, href = target.href;
+        if (target.tagName == "A" && href) {
+          if (href.match(/^https?\:/i)) {
+            ga('send', 'event', 'link', 'click', href,
+              {'hitCallback': hitCallbackHandler(href)},
+              {'nonInteraction': 1}
+            );
+            event.PreventDefault();
+          } else if (href.match(/^mailto\:/i)) {
+            ga('send', 'event', 'mailto-link', 'click', href,
+              {'hitCallback': hitCallbackHandler(href)},
+              {'nonInteraction': 1}
+            );
+            event.PreventDefault();
+          }
+        }
+      } catch (e) {}
+    });
   })();
 }catch(e){}
 </script>

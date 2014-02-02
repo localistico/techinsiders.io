@@ -20,9 +20,9 @@ subscribe_cta_subtitle: Subscribe and we'll deliver cool content to your inbox!
     people to join in.</p>
   </header>
 
+    {% for post in site.posts limit: 1 %}
   <div class="feat-interview">
     <h2>Featured story</h2>
-    {% for post in site.posts limit: 1 %}
     <div class="interviewee">
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <p class="meta">Published on {{ post.date | date_to_long_string }}</p>
@@ -30,8 +30,8 @@ subscribe_cta_subtitle: Subscribe and we'll deliver cool content to your inbox!
       <p>{{ post.description }}</p>
       <a class="read-link" href="{{ post.url }}">Keep reading</a>
     </div>
-    {% endfor %}
   </div>
+    {% endfor %}
 </section>
 
 {% include subscribe_cta.html %}

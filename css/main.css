@@ -1,160 +1,671 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
+#mc_embed_signup {
+  background:#333;
+  clear:left;
 }
 
-html, body { height: 100%; }
+#mc_embed_signup form {
+  margin: 0px;
+  padding: 0px;
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+}
+
+#mc_embed_signup .mc-field-group label {
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  word-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+
+#mc_embed_signup .mc-field-group {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+#mc_embed_signup .mc-field-group input {
+  background: #666;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  line-height: 2em;
+  font-size: 1.25em;
+  color: #fff;
+  font-weight: 300;
+}
+
+#mc_embed_signup form input[type="submit"] {
+  background: #A4C740;
+  color: rgba(255,255,255,1);
+  -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  line-height: 2em;
+  font-size: 1.35em;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 8px 22px;
+  outline: none;
+  height: auto;
+}
+
+#mc_embed_signup form input[type="submit"]:hover, #mc_embed_signup form input[type="submit"]:active {
+  background: #8CBE22;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+div.mc-field-group {
+  margin-right: 0;
+}
 
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+  background-color: #f8f8f8;
+  border-top: 10px solid #333;
+  font-weight: 300;
+  font-family: 'Georgia',  serif;
+  color: #333;
+  text-align: left;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+div.header, article, section, footer {
+  padding: 1em;
+  width: 55%;
+  min-width: 800px;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.posts li {
-  line-height: 1.75em;
-}
-
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.title a {
-  color: #a00;
-}
-
-.title a:hover {
-  color: #000;
-}
-
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.header a.extra:hover {
-  color: #000;
-}
-
-.meta {
-  color: #aaa;
-}
-
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
+.header {
+  padding-bottom: 0.5em;
   overflow: hidden;
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  display: table;
 }
 
-.footer .contact {
+div.header a {
+  color: #333;
+}
+
+div.header a#home {
   float: left;
-  margin-right: 3em;
+  display: block;
 }
 
-.footer .contact a {
-  color: #8085C1;
+div.header a:hover, a:active {
+  color: #8CBE22;
+  -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
+div.header img {
+  max-width:100%;
+}
+
+.header ul {
+  margin: 0;
   float: right;
 }
 
-.footer .rss img {
-  border: 0;
+.header ul li {
+  display: inline-block;
+  line-height: 65px;
+  vertical-align: baseline;
+  padding: 0px 5px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 65px;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+.header ul li a {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: right;
+  padding: 0.3em 0.6em;
+  /*line-height: 15px;*/
+  letter-spacing: 0.015em;
+  text-decoration: underline;
 }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
+.header ul li a#subscribe-button {
+  width: 100%;
+  background: #A4C740;
+  color: rgba(255,255,255,1);
+  -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
 }
 
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
+.header ul li a#subscribe-button:hover, .header ul li a#subscribe-button:active {
+  background: #8CBE22;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
-.post pre code {
-  border: none;
+header {
+  text-align: center;
+  padding: 6em 0;
 }
 
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
+header h1 {
+  font-weight: 700;
+  font-size: 7em;
+  margin:0 0 20px 0;
+  line-height: 0.75em;
 }
 
-.post pre.terminal code {
-  background-color: #333;
+header h2 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.25em;
+  line-height: 1.25em;
+  color: #666;
+  margin: 0;
+}
+
+header h2 em {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.33em;
+  line-height: 1.25em;
+  color: #333;
+}
+
+header h3.present {
+  margin: 0 0 30px 0;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 100;
+  font-style: italic;
+  color: #b4b4b4;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  text-align: center;
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+}
+
+div#introduction {
+  font-style: italic;
+  padding: 20px 0;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  color: #666;
+  margin-bottom: 6em;
+}
+
+div#introduction p {
+  margin: 10px 0;
+}
+
+.header pre {
+  line-height: 1.2em;
+}
+
+h1, h2, h3, h4 {
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+}
+
+h1 {
+  font-size:3em;
+  line-height: 100%;
+}
+
+h3 {
+  font-size: 1.5em;
+  display: block;
+  line-height: 1.5em;
+  margin: 40px 0 0 0;
+}
+
+a {
+  color: #74BE22;
+}
+
+a:hover, a:active {
+  color: #A5CA3F;
+  -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+div.band {
+  padding: 0;
+  background: #333;
+  border-top: 1px solid #444;
+}
+
+footer {
+  padding: 2em 0;
+  text-align: center;
+  color: rgba(255,255,255,0.4);
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+}
+
+footer p {
+  margin: 20px 0;
+}
+
+footer a {
+  color: #A4C740;
+}
+
+footer a:hover, footer a:active {
+  color: #8CBE22;
+}
+
+article h3 {
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  font-weight: 700;
+}
+
+article figure {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+article figure figcaption {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0px;
+}
+
+article figure figcaption p {
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  margin: 0px;
+  font-size: 0.9em;
+  background: rgba(0,0,0,0.6);
+  color: rgba(255,255,255,0.8);
+  padding: 0.25em 0.35em;
+  text-align: right;
+  display: inline-block;
+}
+
+article img {
+  width: 100%;
+}
+
+p.meta {
+  font-size: 1.25em;
+  font-style: italic;
+  color: #b4b4b4;
+  font-weight: 100;
+  margin: 20px 0 0 0;
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+}
+
+p.meta:before {
+  content: "— ";
+}
+
+p.meta:after {
+  content: " —";
+}
+
+.subscribe_cta {
+  color: rgba(255,255,255,0.8);
+  padding: 4em 1em;
+}
+
+.subscribe_cta h1 {
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  font-size: 2.5em;
+}
+
+.subscribe_cta h2 {
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 1.25em;
+  margin: 0 0 30px 0;
+}
+
+.subscribe_cta p {
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  font-size: 1.25em;
+  margin-bottom: 0;
+}
+
+section.home header {
+  padding: 4em 0 6em 0;
+}
+
+section.home header h1 {
+  font-size: 3.2em;
+  line-height: 1.25em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+section.home header h1 span.strong {
+  font-size: 2.35em;
+  font-weight: 900;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+section.home header h1 span.stronger {
+  font-size: 2.7em;
+  font-weight: 900;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+section.home header h1 span.light {
+  text-transform: uppercase;
+  top: -0.6em;
+  font-size: 0.85em;
+  border-bottom: 0.3em solid #333;
+  font-weight: 700;
+  line-height: 1em;
+  position: relative;
+  margin-left: 1.5%;
+}
+
+section.home header p {
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 0;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  text-align: left;
+  padding: 1em 0;
+}
+
+div.feat-interview {
+  overflow: hidden;
+  padding-bottom: 6em;
+}
+
+div.feat-interview h2 {
+  font-size: 1.25em;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #666;
+}
+
+div.interviewee {
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 1.75em 0;
+}
+
+div.interviewee img {
+  float: left;
+  width: 25%;
+  margin-right: 3%;
+}
+
+div.interviewee h3 {
+  font-size: 2.25em;
+  line-height: 1em;
+  margin: 0 0 20px 0;
+}
+
+div.interviewee h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+div.interviewee h3 a:hover, div.interviewee h3 a:active {
+  color: #8CBE22;
+  -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+div.interviewee p.meta {
+  display: inline-block;
+  font-size: 1.25em;
+  margin: 0 0 10px 0;
+}
+
+div.interviewee p.meta:before {
+  content: none;
+}
+
+div.interviewee p.meta:after {
+  content: none;
+}
+
+div.interviewee p {
+  font-size: 1.35em;
+  line-height: 1.35em;
+  margin: 0 0 10px 0;
+}
+
+div.interviewee a.read-link {
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  div.header, article, section, footer {
+    min-width: 0px;
+    width: 100%;
+  }
+  div.header{
+    padding: 1.5em;
+    /*margin: 2em;*/
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+  h1 span {
+    font-size: 0.6em;
+  }
+  article {
+    width: 100%;
+    min-width: 0px;
+    margin: 0px;
+    padding: 0 2em 0 2em;
+  }
+  header {
+    padding: 4em 0;
+  }
+  header h1 {
+    font-size: 4.5em;
+    line-height: 1.15em;
+    margin:0 0 15px 0;
+  }
+
+  header h2 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+
+  header h2 em {
+    font-size: 1.33em;
+    line-height: 1.25em;
+  }
+
+  header h3.present {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.35em;
+    line-height: 1.5em;
+    margin: 40px 0 0 0;
+  }
+  p {
+    font-size: 1.35em;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  div#introduction {
+    margin-bottom: 4em;
+  }
+
+  .subscribe_cta, footer {
+    padding: 4em 2em;
+  }
+
+  .subscribe_cta h2 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+
+  footer p {
+    margin: 0;
+    text-align: left;
+  }
+
+  section.home header {
+    padding: 2em 0 4em 0;
+  }
+
+  section.home header h1 {
+    font-size: 5.5vw;
+  }
+  
+  div.interviewee img {
+    width: 35%;
+  }
+
+  div.interviewee h3 {
+    line-height: 1.25em;
+  }
+  
+}
+@media screen and (max-width: 550px) {
+  #mc_embed_signup form input[type="submit"] {
+    width: 100%;
+  }
+
+  div.header a#home {
+    float: none;
+    display: table-caption;
+    text-align: center;
+    padding-top: 1.5em;
+  }
+
+  .header nav {
+    display: table-row-group;
+  }
+
+  .header ul {
+    float: none;
+    width: 100%;
+    padding: 0px;
+    display: table-row;
+  }
+
+  .header ul li {
+    line-height: 1em;
+    height: 1em;
+    width: 50%;
+  }
+
+  .header ul li:first-child {
+    text-align: center;
+  }
+
+  article {
+    padding: 0 1em 0 1em;
+  }
+
+  header {
+    padding: 3em 0;
+  }
+
+  section.home header h1 {
+    font-size: 1em;
+    font-size: 5vw;
+  }
+
+  header h1 {
+    font-size: 3em;
+    line-height: 1.15em;
+    margin:0 0 15px 0;
+  }
+
+  header h2 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
+  header h2 em {
+    font-size: 1.33em;
+    line-height: 1.25em;
+  }
+
+  header h3.present {
+    font-size: 1.1em;
+  }
+
+  p.meta {
+    font-size: 1.1em;
+  }
+
+  div#introduction {
+    margin-bottom: 3em;
+  }
+  
+  section.home header p {
+    font-size: 1.25em;
+  }
+  
+  div.interviewee p.meta {
+    margin: 0 0 20px 0;
+  }
+  
+  .subscribe_cta, footer {
+    padding: 4em 1em;
+  }
+
+  .subscribe_cta h1 {
+    font-size: 2.25em;
+    margin-bottom: 15px;
+  }
+
+  .subscribe_cta h2 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
+  .subscribe_cta p {
+    font-size: 1.35em;
+  }
 }

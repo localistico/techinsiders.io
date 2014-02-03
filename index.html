@@ -1,57 +1,38 @@
 ---
-layout: teaser
-title: Tech Insiders - Learn about the tech industry from the people that work on it
+layout: default
+title: Tech Insiders - Learn about the tech industry from the people who work on it
 description: "Interviews with people working in the tech industry to learn: what their day to day at work is like, what they like about it, and how they got there"
+subscribe_cta: Sounds interesting?
+subscribe_cta_subtitle: Subscribe and we'll deliver cool content to your inbox!
 ---
 
-<h2>What is Tech Insiders?</h2>
+<section class="home">
+  <header>
+    <h1>
+      Learn about the tech industry from <br/>
+      <span class="stronger">the people</span><br/>
+      <span class="strong">who work</span> <span class="light">in it</span>
+    </h1>
+    <p id="welcome-text">From Tech Insiders we want to share different personal
+    experiences from people in the industry: what is their day to day work
+    like, what do they like about it, who did they get there…We want to provide
+    a diverse portrait on working in the tech industry and maybe inspire other
+    people to join in.</p>
+  </header>
 
-<p>One of the things we love the most about the tech industry is all the
-different opportunities it has to offer depending on your interests and the
-kind of company you might like. There’s something for everybody!
-
-<p>Unfortunately, many people are not aware of all the opportunities that would
-be a great fit for them or how they could get there.
-
-<p>We are preparing some personal interviews with people who work in the
-industry: what is their day to day work like, what do they like about it, how
-did they get there… We want to provide a varied view on what working in the
-tech industry is like and maybe some interviews will help people say "that’s
-cool, I would love to do something similar!".
-
-<h2>Are you interested?</h2>
-
-<p>Great to hear that! leave us your name and email address and we'll send you
-the content to your inbox as soon as we are ready. We promise we won't send you
-SPAM and won't share your details with anybody else.
-
-<!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-  <form action="http://espressocollective.us3.list-manage2.com/subscribe/post?u=30b273b8029e296d3390ec5fb&amp;id=92815282a5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div class="mc-field-group">
-      <label for="mce-NAME">Name </label>
-      <input type="text" value="" name="NAME" class="" id="mce-NAME">
+    {% for post in site.posts limit: 1 %}
+  <div class="feat-interview">
+    <h2>Featured story</h2>
+    <div class="interviewee">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p class="meta">Published on {{ post.date | date_to_long_string }}</p>
+      <img src="/assets/photos/thumb-{{ post.photo }}" width="" height="" alt=""/>
+      <p>{{ post.description }}</p>
+      <a class="read-link" href="{{ post.url }}">Keep reading</a>
     </div>
-    <div class="mc-field-group">
-      <label for="mce-EMAIL">Email Address </label>
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-    </div>
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>
-    <!-- real people should not fill this in and expect good things - do not
-    remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_30b273b8029e296d3390ec5fb_92815282a5" value="" autocomplete="off"></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-  </form>
-</div>
-<!--End mc_embed_signup-->
+  </div>
+    {% endfor %}
+</section>
 
-<h2>Do you have a suggestion?</h2>
+{% include subscribe_cta.html %}
 
-<p>Do you have a recommendation about who should we interview next? Maybe make some introductions? Perhaps you would like us to touch on some particular topic?
-
-<p>That's cool! We would love to hear it! Just write us an email with your
-suggestions: <a
-  href="mailto:contact@techinsiders.io">contact@techinsiders.io</a>.

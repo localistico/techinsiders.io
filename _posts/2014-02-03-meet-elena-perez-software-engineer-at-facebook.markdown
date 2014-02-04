@@ -25,7 +25,7 @@ I’m working as a Software Engineer in the London office we opened around a yea
 
 On February 11th it’ll make one year.
 
-### That means you joined not longer after the London office opened?
+### That means you joined not long after the London office opened?
 
 Yes, on August 2012 Facebook opened the London office with a "landing team" of 12 engineers from the USA. They moved to London to kick-off the new office while preserving the Facebook culture. Then some of us started joining the London office to be based in London permanently. When I started we were around 30 or 35 and we are about 80 engineers now.
 

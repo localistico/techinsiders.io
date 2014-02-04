@@ -1,7 +1,11 @@
 ---
 layout: default
+og_type: article
 ---
-<article>
+<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+  <meta itemprop="name" content="{{ page.title }}" />
+  <meta itemprop="url" content="{{ page.url }}" />
+  <meta itemprop="wordCount" content="{{ content | number_of_words }}" />
   <header>
     <h3 class="present">We proudly present</h3>
     <h1>{{ page.name }}</h1>
@@ -10,25 +14,27 @@ layout: default
     </h2>
     <p class="meta">
       Published on
-      <time datetime="{{ page.date }}">
+      <time datetime="{{ page.date }}" itemprop="datePublished">
         {{ page.date | date_to_long_string }}
       </time>
     </p>
   </header>
   {% if page.intro %}
-  <div id="introduction">
+  <div itemprop="description" id="introduction">
     {{ page.intro | markdownify }}
   </div>
   {% endif %}
   {% if page.photo %}
   <figure>
-    <img src="/assets/photos/{{ page.photo }}" alt="Photo of {{ page.name }}" />
+    <img itemprop="image" src="/assets/photos/{{ page.photo }}" alt="Photo of {{ page.name }}" />
     {% if page.caption %}
     <figcaption>{{ page.caption | markdownify }}</figcaption>
     {% endif %}
   </figure>
   {% endif %}
-  {{ content }}
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
 </article>
 
 {% include subscribe_cta.html %}

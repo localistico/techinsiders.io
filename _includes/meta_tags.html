@@ -1,16 +1,16 @@
 <meta name="description" content="{{ page.description }}" />
 
-<!-- Schema.org -->
-<meta itemprop="name" content="{{ page.title }}" />
-<meta itemprop="description" content="{{ page.description }}" />
-
 <!-- Open Graph tags -->
-<meta property="og:type" content="website" />
+<meta property="og:type" content="{{ page.og_type }}" />
 <meta property="og:site_name" content="Tech Insiders" />
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:description" content="{{ page.description }}" />
+{% if page.photo %}
+<meta property="og:image" content="{{ site.url }}/assets/photos/thumb-{{ page.photo }}" />
+{% else %}
 <meta property="og:image" content="{{ site.url }}/assets/og_preview200.png" />
+{% endif %}
 
 <!-- Twitter cards -->
 <meta name="twitter:card" content="summary" />

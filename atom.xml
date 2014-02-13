@@ -23,7 +23,7 @@ layout: none
   <entry>
     <id>{{ site.url }}{{ post.url }}</id>
     {% if post.photo %}
-    <logo>{{ site.url }}/assets/photos/{{ post.photo }}</logo>
+    <logo>{{ site.url }}/assets/photos/thumb-{{ post.photo }}</logo>
     {% endif %}
     <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url }}"/>
     <title type="text">{{ post.title | strip_html | xml_escape }}</title>

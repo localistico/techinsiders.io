@@ -44,7 +44,7 @@ layout: none
       {% endif %}
       {% if post.photo %}
       <figure>
-        <img itemprop="image" src="/assets/photos/{{ post.photo }}" alt="Photo of {{ post.name }}" />
+        <img itemprop="image" src="{{ site.url }}/assets/photos/{{ post.photo }}" alt="Photo of {{ post.name }}" />
         {% if post.caption %}
         <figcaption>{{ post.caption | markdownify }}</figcaption>
         {% endif %}

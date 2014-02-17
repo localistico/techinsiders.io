@@ -86,6 +86,10 @@ div#header, article, section, footer {
   box-sizing: border-box;
 }
 
+article aside {
+  margin-top: 6em;
+}
+
 #header {
   padding-bottom: 0.5em;
   overflow: hidden;
@@ -130,7 +134,7 @@ div#header img {
   height: 65px;
 }
 
-#header ul li a {
+#header a {
   text-transform: uppercase;
   font-weight: 400;
   text-align: right;
@@ -140,7 +144,7 @@ div#header img {
   text-decoration: underline;
 }
 
-#header ul li a#subscribe-button {
+#header a#subscribe-button {
   width: 100%;
   background: #A4C740;
   color: rgba(255,255,255,1);
@@ -150,7 +154,7 @@ div#header img {
 	text-decoration: none;
 }
 
-#header ul li a#subscribe-button:hover, #header ul li a#subscribe-button:active {
+#header a#subscribe-button:hover, #header a#subscribe-button:active {
   background: #8CBE22;
   color: #fff;
   -webkit-transition: all 0.5s ease;
@@ -258,6 +262,10 @@ div.band {
   padding: 0;
   background: #333;
   border-top: 1px solid #444;
+}
+
+div.band.subscribe {
+  margin-top: 6em;
 }
 
 footer {
@@ -406,7 +414,6 @@ section.home header p {
 
 div.feat-interview {
   overflow: hidden;
-  padding-bottom: 6em;
 }
 
 div.feat-interview h2 {
@@ -496,24 +503,27 @@ div#header .scrolled {
     background: #f8f8f8;
     margin: 0px;
     padding: 0px;
-    border-top: 10px solid;
+    border: 0px solid #ddd;
+    border-top: 10px solid #333;
     top: 0px;
     width: 100%;
     padding: 1em -moz-calc((100% - 800px)/ 2);
     padding: 1em -webkit-calc((100% - 800px)/ 2);
     padding: 1em -o-calc((100% - 800px)/ 2);
     padding: 1em calc((100% - 800px)/ 2);
+    padding-bottom: 0.25em;
     display:block;
-    -moz-box-shadow: 0px 0px 8px 8px #f8f8f8;
-    -webkit-box-shadow: 0px 0px 8px 8px #f8f8f8;
-    box-shadow: 0px 0px 8px 8px #f8f8f8;
     z-index: 1;
   }
 
+  #header.scroll {
+    border-bottom: 1px solid #ddd;
+  }
+
   #header .scrolled {
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 0px;
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
 
   #header.scroll .scrolled {
@@ -524,15 +534,42 @@ div#header .scrolled {
     transition: all 0.5s ease;
     opacity: 1;
     padding-left: 0px;
-    padding-right: 20px;
+    padding-right: 10px;
   }
 
-  #header ul li a#subscribe-button {
+  #header.hidden {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: -200px;
+  }
+
+  #header.scroll {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: 0px;
+  }
+
+  #header a#subscribe-button {
     background-color: #BBB;
   }
 
-  #header.scroll ul li a#subscribe-button {
+  #header.scroll a#subscribe-button {
     background-color: #A4C740;
+  }
+
+  #header.scroll a#subscribe-button:hover, #header.scroll a#subscribe-button:active {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: #8CBE22;
   }
 }
 

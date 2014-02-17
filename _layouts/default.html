@@ -18,11 +18,11 @@
     <body>
 
     <div class="site">
-      <div class="header">
+      <div id="header">
         <a id="home" href="/"><img src="/assets/logox2.png" width="255" height="69" alt="techinsiders.io"/></a>
         <nav>
           <ul>
-            <li><a id="subscribe-button" class="extra" href="#subscribe">Subscribe</a></li>
+            <li><span class="scrolled">Don't miss any interviews!</span>  <a id="subscribe-button" class="extra" href="#subscribe">Subscribe</a></li>
             <!--<li><a class="extra" href="/archives.html">Archive</a></li>-->
           </ul>
         </nav>
@@ -77,6 +77,22 @@ try{
         }
       } catch (e) {}
     });
+    if (window.matchMedia && window.matchMedia('(min-width: 801px)').matches) {
+    var header = document.getElementById('header'),
+        subscribe = document.getElementById('subscribe'),
+        first = true;
+    document.addEventListener('scroll', function() {
+      var subscribeOffset = subscribe.offsetTop;
+      header.style.display = ((window.scrollY + 100) > subscribeOffset) ? "none" : "";
+      if (first) {
+        first = false;
+        return;
+      }
+      if (header.className == "") {
+        header.className = "scroll";
+      }
+    });
+    }
   })();
 }catch(e){}
 </script>

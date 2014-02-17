@@ -35,6 +35,11 @@ og_type: article
   <div itemprop="articleBody">
     {{ content }}
   </div>
+  {% if page.previous %}
+  <aside>
+    {% include interview_summary.html post=page.previous %}
+  </aside>
+  {% endif %}
 </article>
 
 {% include subscribe_cta.html %}

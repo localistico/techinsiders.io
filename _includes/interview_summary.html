@@ -1,0 +1,9 @@
+<div class="interviewee">
+  <h3><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
+  <p class="meta">Published on {{ include.post.date | date_to_long_string }}</p>
+  <a href="{{ include.post.url }}">
+    <img src="/assets/photos/thumb-{{ include.post.photo }}" alt="Photo of {{ include.post.name }}"/>
+  </a>
+  <p>{{ include.post.description }}</p>
+  <a class="read-link" href="{{ include.post.url }}">Keep reading</a>
+</div>

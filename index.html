@@ -23,18 +23,12 @@ subscribe_cta_subtitle: Subscribe and we'll deliver updates and other exclusive 
     a diverse portrait on working in the tech industry and hopefully inspire others to join in.</p>
   </header>
 
-    {% for post in site.posts limit: 1 %}
   <div class="feat-interview">
-    <h2>Featured story</h2>
-    <div class="interviewee">
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <p class="meta">Published on {{ post.date | date_to_long_string }}</p>
-      <img src="/assets/photos/thumb-{{ post.photo }}" width="" height="" alt=""/>
-      <p>{{ post.description }}</p>
-      <a class="read-link" href="{{ post.url }}">Keep reading</a>
-    </div>
-  </div>
+    <h2>Latest interviews</h2>
+    {% for post in site.posts limit: 2 %}
+      {% include interview_summary.html post=post %}
     {% endfor %}
+  </div>
 </section>
 
 {% include subscribe_cta.html %}

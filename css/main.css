@@ -76,7 +76,7 @@ body {
   margin: 0;
 }
 
-div.header, article, section, footer {
+div#header, article, section, footer {
   padding: 1em;
   width: 55%;
   min-width: 800px;
@@ -86,23 +86,27 @@ div.header, article, section, footer {
   box-sizing: border-box;
 }
 
-.header {
+article aside {
+  margin-top: 6em;
+}
+
+#header {
   padding-bottom: 0.5em;
   overflow: hidden;
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
   display: table;
 }
 
-div.header a {
+div#header a {
   color: #333;
 }
 
-div.header a#home {
+div#header a#home {
   float: left;
   display: block;
 }
 
-div.header a:hover, a:active {
+div#header a:hover, a:active {
   color: #8CBE22;
   -webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -111,16 +115,16 @@ div.header a:hover, a:active {
 	transition: all 0.5s ease;
 }
 
-div.header img {
+div#header img {
   max-width:100%;
 }
 
-.header ul {
+#header ul {
   margin: 0;
   float: right;
 }
 
-.header ul li {
+#header ul li {
   display: inline-block;
   line-height: 65px;
   vertical-align: baseline;
@@ -130,7 +134,7 @@ div.header img {
   height: 65px;
 }
 
-.header ul li a {
+#header a {
   text-transform: uppercase;
   font-weight: 400;
   text-align: right;
@@ -140,7 +144,7 @@ div.header img {
   text-decoration: underline;
 }
 
-.header ul li a#subscribe-button {
+#header a#subscribe-button {
   width: 100%;
   background: #A4C740;
   color: rgba(255,255,255,1);
@@ -150,7 +154,7 @@ div.header img {
 	text-decoration: none;
 }
 
-.header ul li a#subscribe-button:hover, .header ul li a#subscribe-button:active {
+#header a#subscribe-button:hover, #header a#subscribe-button:active {
   background: #8CBE22;
   color: #fff;
   -webkit-transition: all 0.5s ease;
@@ -215,7 +219,7 @@ div#introduction p {
   margin: 10px 0;
 }
 
-.header pre {
+#header pre {
   line-height: 1.2em;
 }
 
@@ -258,6 +262,10 @@ div.band {
   padding: 0;
   background: #333;
   border-top: 1px solid #444;
+}
+
+div.band.subscribe {
+  margin-top: 6em;
 }
 
 footer {
@@ -406,7 +414,6 @@ section.home header p {
 
 div.feat-interview {
   overflow: hidden;
-  padding-bottom: 6em;
 }
 
 div.feat-interview h2 {
@@ -477,12 +484,101 @@ div.interviewee a.read-link {
   font-family: "adelle", Arial, Helvetica, 'Trebuchet MS',  sans-serif;
 }
 
+div#header .scrolled {
+  opacity: 0;
+  display: none;
+}
+
+@media screen and (min-width: 801px) {
+  header {
+    margin-top: 7em;
+  }
+
+  div#header .scrolled {
+    display: inline;
+  }
+
+  div#header {
+    position:fixed;
+    background: #f8f8f8;
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid #ddd;
+    border-top: 10px solid #333;
+    top: 0px;
+    width: 100%;
+    padding: 1em -moz-calc((100% - 800px)/ 2);
+    padding: 1em -webkit-calc((100% - 800px)/ 2);
+    padding: 1em -o-calc((100% - 800px)/ 2);
+    padding: 1em calc((100% - 800px)/ 2);
+    padding-bottom: 0.25em;
+    display:block;
+    z-index: 1;
+  }
+
+  #header.scroll {
+    border-bottom: 1px solid #ddd;
+  }
+
+  #header .scrolled {
+    padding-left: 10px;
+    padding-right: 0px;
+    /*font-weight: bold;*/
+  }
+
+  #header.scroll .scrolled {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 1;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+
+  #header.hidden {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: -200px;
+  }
+
+  #header.scroll {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: 0px;
+  }
+
+  #header a#subscribe-button {
+    background-color: #BBB;
+  }
+
+  #header.scroll a#subscribe-button {
+    background-color: #A4C740;
+  }
+
+  #header.scroll a#subscribe-button:hover, #header.scroll a#subscribe-button:active {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: #8CBE22;
+  }
+}
+
 @media screen and (max-width: 800px) {
-  div.header, article, section, footer {
+  div#header, article, section, footer {
     min-width: 0px;
     width: 100%;
   }
-  div.header{
+  div#header{
     padding: 1.5em;
     /*margin: 2em;*/
   }
@@ -559,7 +655,7 @@ div.interviewee a.read-link {
   section.home header h1 {
     font-size: 5.5vw;
   }
-  
+
   div.interviewee img {
     width: 35%;
   }
@@ -567,38 +663,38 @@ div.interviewee a.read-link {
   div.interviewee h3 {
     line-height: 1.25em;
   }
-  
+
 }
 @media screen and (max-width: 550px) {
   #mc_embed_signup form input[type="submit"] {
     width: 100%;
   }
 
-  div.header a#home {
+  div#header a#home {
     float: none;
     display: table-caption;
     text-align: center;
     padding-top: 1.5em;
   }
 
-  .header nav {
+  #header nav {
     display: table-row-group;
   }
 
-  .header ul {
+  #header ul {
     float: none;
     width: 100%;
     padding: 0px;
     display: table-row;
   }
 
-  .header ul li {
+  #header ul li {
     line-height: 1em;
     height: 1em;
     width: 50%;
   }
 
-  .header ul li:first-child {
+  #header ul li:first-child {
     text-align: center;
   }
 
@@ -642,15 +738,15 @@ div.interviewee a.read-link {
   div#introduction {
     margin-bottom: 3em;
   }
-  
+
   section.home header p {
     font-size: 1.25em;
   }
-  
+
   div.interviewee p.meta {
     margin: 0 0 20px 0;
   }
-  
+
   .subscribe_cta, footer {
     padding: 4em 1em;
   }

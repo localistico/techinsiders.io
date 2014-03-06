@@ -25,7 +25,7 @@ subscribe_cta_subtitle: Subscribe and we'll deliver updates and other exclusive 
 
   <div class="feat-interview">
     <h2>Latest interviews</h2>
-    {% for post in site.posts limit: 2 %}
+    {% for post in site.posts %}
       {% include interview_summary.html post=post %}
     {% endfor %}
   </div>
